@@ -194,6 +194,11 @@ function starStaire(n) {
 }
 function startriangleBox1(n) {
   /*
+        *
+        **
+        * *
+        *  *
+        *****
    * Step 1 : Initialize str.
    * Step 2 : Initialize a loop from 0 to n by incrementing i by 1.
    * Step 2.1 : intialize a loop from 0 until i by incrementing j by 1.
