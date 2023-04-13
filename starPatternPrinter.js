@@ -1,5 +1,10 @@
 function startriangle(n) {
   /*
+        *
+       ***
+      *****
+     *******
+    *********
    * Step 1 : Initialize str.
    * Step 2 : Initialize a loop from 0 to n by incrementing i by 1.
    * Step 2.1 : store ' ' into str until n-i.
@@ -22,6 +27,11 @@ function startriangle(n) {
 }
 function startriangleDwn(n) {
   /*
+        *********
+         *******
+          *****
+           ***
+            *
    * Step 1 : Initialize str.
    * Step 2 : Initialize a loop from 0 to n by incrementing i by 1.
    * Step 2.1 : store ' ' into str until i.
@@ -44,6 +54,12 @@ function startriangleDwn(n) {
 }
 function startriangleBoxUP(n) {
   /*
+           *
+          * *
+         *   *
+        *     *
+       *       *
+      ***********
    * Step 1 : Initialize str.
    * Step 2 : Initialize a loop from 0 to n by incrementing i by 1.
    * Step 2.1 : store ' ' into str until n-i.
@@ -75,6 +91,15 @@ function startriangleBoxUP(n) {
 }
 function startriangleUpDwn(n) {
   /*
+           *
+          ***
+         *****
+        *******
+       *********
+        *******
+         *****
+          ***
+           *
    * Step 1 : Initialize str.
    * Step 2 : Initialize a loop from 0 to n by incrementing i by 1.
    * Step 2.1 : store ' ' into str until n-i.
@@ -110,6 +135,11 @@ function startriangleUpDwn(n) {
 }
 function startriangleBox(n) {
   /*
+    *****
+    *   *
+    *   *
+    *   *
+    *****
    * Step 1 : Initialize str.
    * Step 2 : Initialize a loop from 0 to n by incrementing i by 1.
    * Step 2.1 : intialize a loop from 0 until n-1 by incrementing j by 1.
@@ -137,6 +167,11 @@ function startriangleBox(n) {
 }
 function starStaire(n) {
   /*
+        *
+       **
+      ***
+     ****
+    *****
    * Step 1 : Initialize str.
    * Step 2 : Initialize a loop from 0 to n by incrementing i by 1.
    * Step 2.1 : store ' ' into str until n-i.
