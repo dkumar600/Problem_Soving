@@ -14,14 +14,14 @@ function startriangle(n) {
    * Step 4 : END.
   */
   let str = '';
-  for (let i = 0; i < n; i++) {
-    for (let j = 0; j < (n - i); j++) {
-      str += ' ';
+  for (let i = 0; i < n; i++) { // n =4, i=1
+    for (let j = 0; j < (n - i); j++) { 
+      str += ' '; // str=' '' '' '
     }
-    for (let j = 0; j < (i * 2 + 1); j++) {
-      str += '*';
+    for (let j = 0; j < (i * 2 + 1); j++) { // j=0,1,2,3, i=1, i*2+1 = 3
+      str += '*'; // str=' '' '' '***
     }
-    str += '\n';
+    str += '\n'; //str = ' '' '' '***'\n'
   }
   return str;
 }
