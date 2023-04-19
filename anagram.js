@@ -36,7 +36,6 @@ let anagram = (s,g) => {
     } else{
       return `${g} and ${s} are Not Anagram`;
     }
-    console.log(ana,s.length)
     if(ana === s.length){
         return "Both are Anagram";
     } else{
