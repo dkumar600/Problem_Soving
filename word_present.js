@@ -15,10 +15,15 @@
 function word_present(word,test){
     let arr = test.split(' ');
     for(let i=0;i<arr.length;i++){
-        if(arr[i]===word){
+        let c = arr[i];
+        let len = arr[i].length;
+        if (!(c.charCodeAt(len - 1) >= 97 && c.charCodeAt(len - 1) <= 122) || !(c.charCodeAt(len - 1) >= 65 && c.charCodeAt(len - 1) <= 90)) {
+            c = c.slice(0, len - 1);
+        }
+        if(c===word){
             return true;
         }
     }
     return false;
 }
-console.log(word_present('word','this word is not exact match.'));
+console.log(word_present('Match','this word is not exact match.'));
