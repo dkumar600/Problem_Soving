@@ -7,7 +7,10 @@
  *Output - ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j"];
 
  *Step 1 - join array 
- *Step 2 - return array.
+ *Step 2 - take two variable, one as string and one as array.
+ *Step 3 - Initialize a loop to add every array element into string.
+ *Step 4 - Initialize a loop to filter a commas(,) from string and store every other element into array variable
+ *Step 5 - return array.
  */
 
  function joinSubArray(arr){
