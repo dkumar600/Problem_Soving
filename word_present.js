@@ -13,17 +13,22 @@
     * Step 3 - return value true if found otherwise false
  */
 function word_present(word,test){
-    let arr = test.split(' ');
-    for(let i=0;i<arr.length;i++){
-        let c = arr[i];
-        let len = arr[i].length;
-        if (!(c.charCodeAt(len - 1) >= 97 && c.charCodeAt(len - 1) <= 122) || !(c.charCodeAt(len - 1) >= 65 && c.charCodeAt(len - 1) <= 90)) {
-            c = c.slice(0, len - 1);
-        }
-        if(c===word){
-            return true;
+    let counter;
+    for(let i=0;i<test.length;i++){
+        counter=0;
+        if(word[0]==test[i]){
+            counter=1
+            for(j=i+1,c=1;c<word.length;j++,c++){
+                if(word[c]==test[j]){
+                    counter++;
+                    console.log(counter);
+                }
+            }
+            if(counter==word.length){
+               return true
+            }
         }
     }
     return false;
 }
-console.log(word_present('Match','this word is not exact match.'));
+console.log(word_present(' maTch','this word is not exact match.'));
