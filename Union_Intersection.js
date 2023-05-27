@@ -7,7 +7,7 @@
   // Output
   [1, 2, 3, 4, 5, 6, 7, 8];
   
-  * Step 1 - Take Two Arrays as arguments and one object for data storing
+  * Step 1 - Take Two Arrays as arguments and one object for data storing, array for storing
   * Step 2 - Initialise a for loop and check from both arrays if that element exist in the object if yes, continue.
   * Step 2.1 - if No, insert the element into a new array.
   * Step 3 - return the new array.
@@ -33,7 +33,7 @@ function uNion(arr, arr1){
   
 }
 const inputA = [1, 2, 3, 4, 10, 1];
-const inputB = [1, 2, 3, 4, 5, 1, 7, 6, 4, 3, 8];
+const inputB = [1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,2,3,3,3,];
 console.log("Union : "+uNion(inputA,inputB));
 
 /*
@@ -46,9 +46,9 @@ console.log("Union : "+uNion(inputA,inputB));
   [1, 2, 3, 4, 5,];
   
   * Step 1 - Take Two Arrays as arguments and one object for data checking and an array for storing
-  * Step 2 - Initialise a for loop store all the elements from small array.
-  * Step 3 - Initialise a for loop and check for element in bigger array if that element exist in the object if yes, store in separate array.
-  * Step 2.1 - if No, continue.
+  * Step 2 - Initialise a for loop store all the elements from any one array.
+  * Step 3 - Initialise a for loop and check for element in bigger array exist in object if No, Continue.
+  * Step 2.1 - if yes, store in separate array also initialize a object and insert same element for checking and avoiding same element in array.
   * Step 3 - return the new array.
 
 */
@@ -57,14 +57,13 @@ function iNtersect(arr, arr1){
   let obj1 ={};
   let array1 = [];
   for(let i = 0;i<arr.length;i++){
-    if(!(arr[i] in obj)){
+    if(!(arr[i] in obj)){ obj ={1:1,2:2,3:3}
       obj[arr[i]] = arr[i];
     }
   }
-  length = arr.length <= arr1.length ? arr1.length : arr.length;
-  for(let i =0,c=0;i<length;i++){
+  for(let i =0,c=0;i<arr1.length;i++){
     if(arr1[i] in obj && !(arr1[i] in obj1)){
-      obj1[arr[i]] = arr1[i];
+      obj1[arr1[i]] = arr1[i];
       array1[c] = arr1[i];
       c++;
     }

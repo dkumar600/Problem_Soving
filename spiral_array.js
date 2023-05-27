@@ -36,7 +36,7 @@ function spiralArray(arr){
         if(count>=counted){
             break;
         }
-        j=j-1;
+        j=j-1;//
         i=i+1;
         while(i<m){//down
             if(count>=counted || arr[i][j]=='u'){
